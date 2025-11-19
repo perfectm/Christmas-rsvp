@@ -1,0 +1,247 @@
+/* Color Palette from Invitation */
+:root {
+    --sage-green: #8B9A7A;
+    --terracotta: #C8604F;
+    --warm-beige: #F5F1E8;
+    --off-white: #FDFBF7;
+    --warm-brown: #8B6B47;
+    --dark-brown: #4A4238;
+    --light-sage: #a8b89a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(135deg, var(--warm-beige) 0%, #ede7dc 100%);
+    color: var(--dark-brown);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.invitation-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    background: var(--off-white);
+    border-radius: 15px;
+    border: 3px solid var(--warm-brown);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.invitation-header h1 {
+    font-size: 2.5em;
+    color: var(--terracotta);
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.invitation-header h2 {
+    font-size: 1.8em;
+    color: var(--terracotta);
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.event-details {
+    font-size: 1em;
+    color: var(--dark-brown);
+    margin: 5px 0;
+    letter-spacing: 0.5px;
+}
+
+.rsvp-card {
+    background: var(--off-white);
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 3px solid var(--sage-green);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+.rsvp-card h3 {
+    text-align: center;
+    font-size: 1.8em;
+    color: var(--sage-green);
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dark-brown);
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--sage-green);
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: white;
+    color: var(--dark-brown);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--terracotta);
+    box-shadow: 0 0 0 3px rgba(200, 96, 79, 0.1);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border: 2px solid var(--sage-green);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.radio-label:hover {
+    background: var(--warm-beige);
+    border-color: var(--terracotta);
+}
+
+.radio-label input[type="radio"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--terracotta);
+}
+
+.radio-label span {
+    font-size: 1em;
+    color: var(--dark-brown);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px 30px;
+    background: var(--terracotta);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(200, 96, 79, 0.3);
+}
+
+.submit-btn:hover {
+    background: #b34e3d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(200, 96, 79, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.response-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.response-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+    display: block;
+}
+
+.response-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+    display: block;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--dark-brown);
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .invitation-header h1 {
+        font-size: 2em;
+    }
+
+    .invitation-header h2 {
+        font-size: 1.5em;
+    }
+
+    .rsvp-card {
+        padding: 30px 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Optional: Add decorative botanical accents */
+.invitation-header::before {
+    content: '🌿';
+    font-size: 2em;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.invitation-header::after {
+    content: '🌿';
+    font-size: 2em;
+    display: block;
+    margin-top: 15px;
+}

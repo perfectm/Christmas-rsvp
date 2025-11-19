@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Development files
+test-script.js
+google-apps-script.js
+
+# Optional: ignore the invitation image if you don't want it public
+# invite.jpg
