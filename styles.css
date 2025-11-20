@@ -74,6 +74,13 @@ body {
     margin: 5px 0;
 }
 
+.invitation-header hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid var(--warm-brown);
+    opacity: 0.3;
+}
+
 .rsvp-card {
     background: var(--off-white);
     padding: 40px 30px;
