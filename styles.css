@@ -41,7 +41,7 @@ body {
 }
 
 .invitation-header h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: var(--terracotta);
     margin-bottom: 10px;
     font-style: italic;
@@ -61,6 +61,17 @@ body {
     color: var(--dark-brown);
     margin: 5px 0;
     letter-spacing: 0.5px;
+}
+
+.invitation-header ol {
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.invitation-header ol li {
+    margin: 5px 0;
 }
 
 .rsvp-card {
