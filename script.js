@@ -41,7 +41,6 @@ form.addEventListener('submit', async function(e) {
         name: document.getElementById('name').value.trim(),
         attending: document.querySelector('input[name="attending"]:checked').value,
         guests: document.getElementById('guests').value,
-        email: document.getElementById('email').value.trim(),
         message: document.getElementById('message').value.trim()
     };
 
